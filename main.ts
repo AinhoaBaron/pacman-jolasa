@@ -25,7 +25,7 @@ basic.forever(function () {
     if (pacman.isTouching(janaria)) {
         game.addScore(1)
         janaria.delete()
-        janaria_2 = game.createSprite(randint(0, 4), randint(4, 0))
+        janaria_2 = game.createSprite(randint(0, 4), randint(0, 4))
     }
     if (game.createSprite(0, 0).isTouching(mamua)) {
         game.gameOver()
