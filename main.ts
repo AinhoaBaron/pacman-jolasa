@@ -11,15 +11,19 @@ basic.forever(function () {
     mamua.ifOnEdgeBounce()
     basic.pause(400)
     if (input.acceleration(Dimension.X) < 200) {
+        basic.pause(200)
         pacman.move(-1)
     }
     if (input.acceleration(Dimension.X) > -200) {
+        basic.pause(200)
         pacman.move(1)
     }
     if (input.acceleration(Dimension.Y) > 200) {
+        basic.pause(200)
         pacman.change(LedSpriteProperty.Y, 1)
     }
     if (input.acceleration(Dimension.Y) < -200) {
+        basic.pause(200)
         pacman.change(LedSpriteProperty.Y, -1)
     }
     if (pacman.isTouching(janaria)) {
